@@ -1,0 +1,213 @@
+/*html {
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    background: url("mycv.png") no-repeat;
+    background-size: cover;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+i {
+    margin-top: -3em;
+    transition: 2s;
+    transition-duration: 2s
+}
+
+i:hover,
+i:focus {
+    color: #00BFFF;
+    transition-duration: 1s;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    align-items: center;
+    vertical-align: middle;
+}
+
+container {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    background: linear-gradient(143deg, #3ad6ae, #2c254d, #6c8d13, #a6dc15, #3e4db3, #178658, #ed5210);
+    background-size: 1400% 1400%;
+    -webkit-animation: AnimationName 1s ease infinite;
+    -moz-animation: AnimationName 10s ease infinite;
+    animation: AnimationName 5s ease infinite;
+    @-webkit-keyframes AnimationName {
+        0% {
+            background-position: 0% 99%
+        }
+        50% {
+            background-position: 100% 2%
+        }
+        100% {
+            background-position: 0% 99%
+        }
+    }
+    @-moz-keyframes AnimationName {
+        0% {
+            background-position: 0% 99%
+        }
+        50% {
+            background-position: 100% 2%
+        }
+        100% {
+            background-position: 0% 99%
+        }
+    }
+    @keyframes AnimationName {
+        0% {
+            background-position: 0% 99%
+        }
+        50% {
+            background-position: 100% 2%
+        }
+        100% {
+            background-position: 0% 99%
+        }
+    }
+}*/
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  font-family: Helvetica, Arial, sans-serif;
+  overflow: hidden;
+  background: url(remember.jpg) no-repeat;
+ background-size: cover;
+}
+
+.ghost {
+  position: absolute;
+  left: -100%;
+
+}
+
+.framed {
+  position: absolute;
+  top: 50%; left: 50%;
+  width: 15rem;
+  margin-left: -7.5rem;
+
+}
+
+.logo {
+  margin-top: -9em;
+  cursor: default;
+
+}
+
+.form {
+  margin-top: -4.5em;
+  transition: 1s ease-in-out;
+
+}
+
+.input {
+  -moz-box-sizing: border-box;
+       box-sizing: border-box;
+  font-size: 1.125rem;
+  line-height: 3rem;
+  width: 100%; height: 3rem;
+  color: #444;
+  background-color: rgba(255,255,255,.9);
+  border: 0;
+  border-top: 1px solid rgba(255,255,255,0.7);
+  padding: 0 1rem;
+  font-family: 'Open Sans', sans-serif;
+}
+  .input:focus {
+    outline: none;
+  }
+  .input--top {
+    border-radius: 0.5rem 0.5rem 0 0;
+    border-top: 0;
+  }
+  .input--submit {
+    background: linear-gradient(206deg, #1e89b6, #14a2de, #30baf4, #053d55);
+background-size: 800% 800%;
+-webkit-animation: AnimationName 6s ease infinite;
+-moz-animation: AnimationName 6s ease infinite;
+animation: AnimationName 6s ease infinite;
+
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    border-top: 0;
+    border-radius: 0 0 0.5rem 0.5rem;
+    margin-bottom: 1rem;
+  }
+  @-webkit-keyframes AnimationName {
+    0%{background-position:86% 0%}
+    50%{background-position:15% 100%}
+    100%{background-position:86% 0%}
+}
+.Thanks{
+  width: 200px;
+  height: 100px;
+  display: flex;
+
+}
+.text {
+  color: white;
+  text-shadow: 0 1px 1px rgba(0,0,0,0.10);
+  text-decoration: none;
+}
+  .text--small {
+    opacity: 0.85;
+    font-size: 0.75rem;
+    cursor: pointer;
+  }
+    .text--small:hover {
+      opacity: 1;
+    }
+  .text--omega {
+    width: 200%;
+    margin: 0 0 1rem -50%;
+    font-size: 1.5rem;
+    line-height: 1.125;
+    font-weight: normal;
+  }
+  .text--centered {
+    display: block;
+    text-align: center;
+  }
+  .text--border-right {
+    border-right: 1px solid rgba(255,255,255,0.5);
+    margin-right: 0.75rem;
+    padding-right: 0.75rem;
+  }
+
+.legal {
+  position: absolute;
+  bottom: 1.125rem; left: 1.125rem;
+}
+
+.photo-cred {
+  position: absolute;
+  right: 1.125rem; bottom: 1.125rem;
+}
+
+.fullscreen-bg {
+  position: fixed;
+  z-index: -1;
+  top:0; right:0; bottom:0; left:0;
+
+  background-size: cover;
+}
+
+#toggle--login:checked ~ .form--signup { left:200%; visibility:hidden; }
+#toggle--signup:checked ~ .form--login { left:-100%; visibility:hidden; }
